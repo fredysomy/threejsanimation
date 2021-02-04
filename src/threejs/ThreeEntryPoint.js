@@ -25,16 +25,10 @@ export default function ThreeEntryPoint(sceneRef) {
   controls.update();
 
   // Define (or import) your object's geometry
-  const geometry = new THREE.SphereGeometry( 100, 100, 100 );
-
-const wireframe = new THREE.WireframeGeometry( geometry );
-
-const line = new THREE.LineSegments( wireframe );
-line.material.depthTest = false;
-line.material.opacity = 0.25;
-line.material.transparent = true;
-
-scene.add( line );
+  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
 
   // Create lights, position them, and add them to the scene
   const frontSpot = new THREE.SpotLight(0xeeeece);
