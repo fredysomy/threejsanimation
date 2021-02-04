@@ -25,25 +25,16 @@ export default function ThreeEntryPoint(sceneRef) {
   controls.update();
 
   // Define (or import) your object's geometry
-  const geometry = new THREE.TorusKnotGeometry(10, 1.3, 500, 6, 6, 20);
+  const geometry = new THREE.SphereGeometry( 100, 100, 100 );
 
-  // Define your object's material
-  const material = new THREE.MeshStandardMaterial({
-    color: 0xfcc742,
-    emissive: 0x111111,
-    specular: 0xffffff,
-    metalness: 1,
-    roughness: 0.55,
-  });
+const wireframe = new THREE.WireframeGeometry( geometry );
 
-  // Create the mesh, scale it and add it to the scene
-  const mesh = new THREE.Mesh(geometry, material);
+const line = new THREE.LineSegments( wireframe );
+line.material.depthTest = false;
+line.material.opacity = 0.25;
+line.material.transparent = true;
 
-  mesh.scale.x = 0.1;
-  mesh.scale.y = 0.1;
-  mesh.scale.z = 0.1;
-
-  scene.add(mesh);
+scene.add( line );
 
   // Create lights, position them, and add them to the scene
   const frontSpot = new THREE.SpotLight(0xeeeece);
@@ -59,9 +50,7 @@ export default function ThreeEntryPoint(sceneRef) {
   const animate = function () {
     requestAnimationFrame(animate);
 
-    mesh.rotation.x += 0.005;
-    mesh.rotation.y += 0.005;
-    mesh.rotation.z += 0.005;
+    
 
     renderer.render(scene, camera);
   };
