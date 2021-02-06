@@ -7,10 +7,15 @@ export default function ThreeEntryPoint(sceneRef) {
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("0x282c34");
-
-scene.background = new THREE.Color( "black" );
+ const color = 0xFFFFFF;
+    const intensity = 1;
+    const light = new THREE.DirectionalLight(color, intensity);
+    light.position.set(5, 10, 2);
+    scene.add(light);
+    scene.add(light.target);
+scene.background = new THREE.Color( "white" );
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-  camera.position.z = 7;
+ camera.position.set(100, 100, 50);
 
  const loader = new THREE.TextureLoader();
   const renderer = new THREE.WebGLRenderer({antialias: true});
@@ -23,7 +28,7 @@ scene.background = new THREE.Color( "black" );
   controls.rotateSpeed = 0.5;
   controls.update();
 const loaders = new GLTFLoader();
-loaders.load('',(gltf)=>{
+loaders.load('https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf',(gltf)=>{
     scene.add(gltf.scene)
 })
 
