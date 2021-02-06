@@ -5,7 +5,9 @@
 .App-logo {
   height: 40vmin;
 }
-
+canvas{
+    background-color: white;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
