@@ -27,13 +27,19 @@ scene.background = new THREE.Color( "white" );
   controls.target.set(0, 0, 0);
   controls.rotateSpeed = 0.5;
   controls.update();
-const loaders = new GLTFLoader();
-loaders.load('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/models/gltf/SimpleSkinning.gltf',(gltf)=>{
-    scene.add(gltf.scene)
-})
+const geom= new THREE.TextGeometry( 'FREDY SOMY', {
+		size: 80,
+		height: 5,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelOffset: 0,
+		bevelSegments: 5
+	} );
 
 
-
+scene.add(geom)
 
 
 
