@@ -4,16 +4,8 @@
       "bufferView": 1,
       "componentType": 5126,
       "count": 4210,
-      "max": [
-        100,
-        100,
-        100
-      ],
-      "min": [
-        -100,
-        -100,
-        -100
-      ],
+      "max": [100, 100, 100],
+      "min": [-100, -100, -100],
       "type": "VEC3"
     },
     {
@@ -21,28 +13,16 @@
       "byteOffset": 50520,
       "componentType": 5126,
       "count": 4210,
-      "max": [
-        0.8251197338104248,
-        0.82063120603561401,
-        0.82060116529464722
-      ],
-      "min": [
-        -0.81942319869995117,
-        -0.81932169198989868,
-        -0.82354885339736938
-      ],
+      "max": [0.8251197338104248, 0.82063120603561401, 0.82060116529464722],
+      "min": [-0.81942319869995117, -0.81932169198989868, -0.82354885339736938],
       "type": "VEC3"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
       "count": 10284,
-      "max": [
-        4209
-      ],
-      "min": [
-        0
-      ],
+      "max": [4209],
+      "min": [0],
       "type": "SCALAR"
     }
   ],
@@ -112,27 +92,16 @@
   ],
   "nodes": [
     {
-      "children": [
-        1
-      ],
+      "children": [1],
       "name": "RootNode (gltf orientation matrix)",
-      "rotation": [
-        -0.70710678118654746,
-        -0,
-        -0,
-        0.70710678118654757
-      ]
+      "rotation": [-0.70710678118654746, -0, -0, 0.70710678118654757]
     },
     {
-      "children": [
-        2
-      ],
+      "children": [2],
       "name": "RootNode (model correction matrix)"
     },
     {
-      "children": [
-        3
-      ],
+      "children": [3],
       "name": "3dprintinglady TPMS Schwarz {6,4|4}P.stl.cleaner.materialmerger.gles"
     },
     {
@@ -144,10 +113,7 @@
   "scenes": [
     {
       "name": "OSG_Scene",
-      "nodes": [
-        0
-      ]
+      "nodes": [0]
     }
   ]
 }
-
