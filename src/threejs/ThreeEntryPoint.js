@@ -15,7 +15,7 @@ export default function ThreeEntryPoint(sceneRef) {
     scene.add(light.target);
 scene.background = new THREE.Color( "white" );
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
- camera.position.set(100, 100, 50);
+ camera.position.set(10,10,5);
 
  const loader = new THREE.TextureLoader();
   const renderer = new THREE.WebGLRenderer({antialias: true});
