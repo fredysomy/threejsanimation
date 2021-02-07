@@ -10,7 +10,7 @@ export default function ThreeEntryPoint(sceneRef) {
  const color = 0xFFFFFF;
     const intensity = 1;
     const light = new THREE.DirectionalLight(color, intensity);
-    light.position.set(5, 10, 2);
+    light.position.set(25, 25, 10);
     scene.add(light);
     scene.add(light.target);
 scene.background = new THREE.Color( "white" );
