@@ -28,7 +28,7 @@ scene.background = new THREE.Color( "white" );
   controls.rotateSpeed = 0.5;
   controls.update();
 const loaders = new GLTFLoader();
-loaders.load('https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf',(gltf)=>{
+loaders.load('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/models/gltf/SimpleSkinning.gltf',(gltf)=>{
     scene.add(gltf.scene)
 })
 
