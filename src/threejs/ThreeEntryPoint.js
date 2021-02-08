@@ -37,8 +37,8 @@ scene.add( light3 );
 const light4 = new THREE.PointLight( 0xff0000, 1, 100 );
 light4.position.set( 0, 50, 0 );
 scene.add( light4 );
-const light5 = new THREE.AmbientLight( 0x404040 ); // soft white light
-scene.add( light5 );
+const directionalLight = new THREE.DirectionalLight( 0xff0000, 0.5 );
+scene.add( directionalLight );
 
   let controls = new OrbitControls(camera, sceneRef);
   controls.target.set(0, 0, 0);
