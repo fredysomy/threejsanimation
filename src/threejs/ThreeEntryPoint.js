@@ -15,32 +15,45 @@ export default function ThreeEntryPoint(sceneRef) {
     0.1,
     10000
   );
-  camera.position.set(5, 5, 2);
+  camera.position.set(0,0,10);
 
   const loader = new THREE.TextureLoader();
   const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   sceneRef.appendChild(renderer.domElement);
+const light = new THREE.PointLight( 0xff0000, 1, 100 );
+light.position.set( 0, 50, 60 );
+scene.add( light );
 
-  const lightn=new THREE.DirectionalLight(0xffffff, 0.5)
-  lightn.position.set(7,7,7)
+const light2 = new THREE.PointLight( 0xff0000, 1, 100 );
+light2.position.set( 0, -100, 60 );
+scene.add( light2 );
 
-  scene.add(lightn)
+const light3 = new THREE.PointLight( 0xff0000, 1, 100 );
+light3.position.set( 0, -50, 0 );
+scene.add( light3 );
+
+const light4 = new THREE.PointLight( 0xff0000, 1, 100 );
+light4.position.set( 0, 50, 0 );
+scene.add( light4 );
+const light5 = new THREE.AmbientLight( 0xff0000 ); // soft white light
+scene.add( light5 );
+
   let controls = new OrbitControls(camera, sceneRef);
   controls.target.set(0, 0, 0);
   controls.rotateSpeed = 0.5;
   controls.update();
-  const cube=new THREE.BoxGeometry(2,2,2)
-  const mesh=new THREE.MeshStandardMaterial()
-  const cube_mesh=new THREE.Mesh(cube,mesh)
-  
-  scene.add(cube_mesh);
+  const loader1=new GLTFLoader()
+  loader1.load('https://raw.githubusercontent.com/fredysomy/threejsanimation/master/src/models/2/scene.gltf',(gltf)=>{
+      
+  scene.add(gltf.scene)
+  })
   
 
   const animate = function () {
     requestAnimationFrame(animate);
-
+  
     renderer.render(scene, camera);
   };
 
