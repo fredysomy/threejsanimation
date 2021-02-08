@@ -22,22 +22,22 @@ export default function ThreeEntryPoint(sceneRef) {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   sceneRef.appendChild(renderer.domElement);
-const light = new THREE.PointLight( 0xff0000, 1, 100 );
+const light = new THREE.PointLight( 0x404040, 1, 100 );
 light.position.set( 0, 50, 60 );
 scene.add( light );
 
-const light2 = new THREE.PointLight( 0xff0000, 1, 100 );
+const light2 = new THREE.PointLight( 0x404040, 1, 100 );
 light2.position.set( 0, -100, 60 );
 scene.add( light2 );
 
-const light3 = new THREE.PointLight( 0xff0000, 1, 100 );
+const light3 = new THREE.PointLight( 0x404040, 1, 100 );
 light3.position.set( 0, -50, 0 );
 scene.add( light3 );
 
-const light4 = new THREE.PointLight( 0xff0000, 1, 100 );
+const light4 = new THREE.PointLight( 0x404040, 1, 100 );
 light4.position.set( 0, 50, 0 );
 scene.add( light4 );
-const directionalLight = new THREE.DirectionalLight( 0xff0000, 0.5 );
+const directionalLight = new THREE.DirectionalLight( 0x404040, 0.5 );
 scene.add( directionalLight );
 
   let controls = new OrbitControls(camera, sceneRef);
