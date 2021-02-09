@@ -4,7 +4,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 export default function ThreeEntryPoint(sceneRef) {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color("0x282c34");
+  scene.background = new THREE.Color("red");
   const color = 0xffffff;
   const intensity = 1;
   
@@ -22,23 +22,40 @@ export default function ThreeEntryPoint(sceneRef) {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   sceneRef.appendChild(renderer.domElement);
-const light = new THREE.PointLight( 0x404040, 1, 100 );
-light.position.set( 0, 50, 60 );
+const spotLight = new THREE.SpotLight( 0xffffff );
+spotLight.position.set( 0,10,100 );
+scene.add( spotLight );
+
+const spotLight1 = new THREE.SpotLight( 0xffffff );
+spotLight1.position.set( 0,-20,100 );
+scene.add( spotLight1 );
+
+const spotLight2 = new THREE.SpotLight( 0xffffff );
+spotLight2.position.set( 10,0,100 );
+scene.add( spotLight2 );
+
+const spotLight3 = new THREE.SpotLight( 0xffffff );
+spotLight3.position.set( -10,-5,100 );
+scene.add( spotLight3 );
+
+const width = 10;
+const height = 10;
+const intensity2= 1;
+const rectLight = new THREE.RectAreaLight( 0xffffff, intensity2,  width, height );
+rectLight.position.set( 0, 0, 100 );
+rectLight.lookAt( 0, 0, 0 );
+scene.add( rectLight )
+const light0 = new THREE.PointLight( 0xff0000, 1, 10000 );
+light0.position.set( 5, 5, 5 );
+scene.add( light0 );
+
+const light1 = new THREE.PointLight( 0xff0000, 1, 10000 );
+light1.position.set( 0, 10, 0 );
+scene.add( light1 );
+
+const light = new THREE.PointLight( 0xff0000, 1.2, 20000 );
+light.position.set( 0, -10, 0 );
 scene.add( light );
-
-const light2 = new THREE.PointLight( 0x404040, 1, 100 );
-light2.position.set( 0, -100, 60 );
-scene.add( light2 );
-
-const light3 = new THREE.PointLight( 0x404040, 1, 100 );
-light3.position.set( 0, -50, 0 );
-scene.add( light3 );
-
-const light4 = new THREE.PointLight( 0x404040, 1, 100 );
-light4.position.set( 0, 50, 0 );
-scene.add( light4 );
-const directionalLight = new THREE.DirectionalLight( 0x404040, 0.5 );
-scene.add( directionalLight );
 
   let controls = new OrbitControls(camera, sceneRef);
   controls.target.set(0, 0, 0);
