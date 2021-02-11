@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-
+import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader.js"
 export default function ThreeEntryPoint(sceneRef) {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("red");
@@ -61,12 +61,26 @@ scene.add( light );
   controls.target.set(0, 0, 0);
   controls.rotateSpeed = 0.5;
   controls.update();
-  const loader1=new GLTFLoader()
-  loader1.load('https://raw.githubusercontent.com/fredysomy/threejsanimation/master/src/models/2/scene.gltf',(gltf)=>{
-      
-  scene.add(gltf.scene)
-  })
   
+  var mtlLoader = new THREE.MTLLoader();
+mtlLoader.setBaseUrl( '../models/gilr' );
+mtlLoader.setPath( '../models/gilr' );
+var url = "Project Name.mtl";
+mtlLoader.load( url, function( materials ) {
+
+    materials.preload();
+
+    var objLoader = new THREE.OBJLoader();
+    objLoader.setMaterials( materials );
+    objLoader.setPath( '../models/gilr/' );
+    objLoader.load( 'Project Name.obj', function ( object ) {
+
+        object.position.y = - 95;
+        scene.add( object );
+
+    });
+
+});
 
   const animate = function () {
     requestAnimationFrame(animate);
