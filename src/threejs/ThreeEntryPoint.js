@@ -62,7 +62,7 @@ scene.add( light );
   controls.rotateSpeed = 0.5;
   controls.update();
   
-  var mtlLoader = new THREE.MTLLoader();
+  var mtlLoader = new MTLLoader();
 mtlLoader.setBaseUrl( '../models/gilr' );
 mtlLoader.setPath( '../models/gilr' );
 var url = "Project Name.mtl";
@@ -70,7 +70,7 @@ mtlLoader.load( url, function( materials ) {
 
     materials.preload();
 
-    var objLoader = new THREE.OBJLoader();
+    var objLoader = new OBJLoader();
     objLoader.setMaterials( materials );
     objLoader.setPath( '../models/gilr/' );
     objLoader.load( 'Project Name.obj', function ( object ) {
