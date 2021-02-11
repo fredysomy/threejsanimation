@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 export default function ThreeEntryPoint(sceneRef) {

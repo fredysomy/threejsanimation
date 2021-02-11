@@ -1,0 +1,143 @@
+newmtl Layer_14 material_e91dc8cb-e985-4262-b331-f96af3a6a91f
+Kd 0.278 0.208 0.220
+d 1.000
+newmtl Layer_14 material 1_7e07db0c-93d7-453f-b420-646a6007e0a9
+Kd 0.290 0.216 0.227
+d 1.000
+newmtl Material 1_d62c1674-14c8-4b5f-b022-467ea7de5eaf
+Kd 0.988 0.071 0.227
+d 1.000
+newmtl 肌_922c9812-1e9c-4ec7-837a-f66c2b45b20c
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_10.png
+newmtl パレオ白_9daeb285-a41d-475c-9be9-1dd161044958
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_3.png
+newmtl パレオ黒_7214e46a-3c5a-4ee2-a077-621245330fd0
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_5.png
+newmtl 白_3f3393ab-c050-4b1c-be55-2049af0ae2d2
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_9.png
+newmtl 錨_e05fc18d-6e79-4b36-a1e2-8c7b3dd7b66e
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_13.png
+newmtl 金_91ba4711-43b4-4944-a5c3-9aac9cea7500
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_12.png
+newmtl パレオ赤_f2560e9d-c375-447e-800e-cab0f3b3699b
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_4.png
+newmtl 浮き輪赤_32da8860-f68c-4eb2-8aba-c927653fc538
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_8.png
+newmtl 浮き輪白_fca2b38a-009a-48c9-b885-2616ff669ce8
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_7.png
+newmtl 浮き輪文字_ab6d3a25-7c77-4c9f-9044-e374dedfe968
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_6.png
+newmtl 黒_3538ddcd-3337-4955-bdc3-a9c56f285dba
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_14.png
+newmtl 赤_a8e163d3-0b4b-4014-aceb-0707c6bc1241
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_11.png
+newmtl サンダル赤_7ec73141-5cd9-42d1-9209-059bbdb55071
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_1.png
+newmtl サンダル黒_ffb8a71f-f0d0-4dd5-99c3-9139971404ba
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity_2.png
+newmtl サンダル白_887bc585-5220-4f4b-953f-3f4446d894a6
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿水着&大和＿水着_opacity.png
+newmtl 歯_564f53b2-48e9-480b-917e-d65a330c0056
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_3.png
+newmtl 舌_88de129e-4f3e-4827-9c43-0ad59b11879c
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_7.png
+newmtl まつげ_82b31d50-78bc-411b-b275-bf4ac2934f01
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity.png
+newmtl 眉_d9ed877a-f9a3-4997-8ef3-96672543174a
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_5.png
+newmtl 口内_c688bc92-350d-4046-b9fc-14fba1086f77
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_1.png
+newmtl 顔_590b40e7-c2ea-4366-8616-84dc34b6d7d1
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_8.png
+newmtl 顔＿せんなし_159b1810-0772-458c-aa9b-3bcbbab3d4e6
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_9.png
+newmtl 瞳_130d8db5-5f79-41bf-828e-1df830722ba0
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_6.png
+newmtl 目＿ハイライト_d99019d6-9cda-4e1d-b760-ec26144572d7
+Kd 0.800 0.800 0.800
+d 1.000
+newmtl 唇＿ハイライト_d4328648-ceea-48a8-a6fe-48a430bc37f0
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_2.png
+newmtl 白目_d041c873-7dbe-4bbf-b187-04e5b104fa94
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_4.png
+newmtl 顔＿二重_193b9de4-f244-4d50-88c6-bec29d1b75ea
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿顔&大和＿顔_opacity_10.png
+newmtl 髪＿1_7973195a-f844-45e6-8f99-362068b0b3c1
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪&大和＿髪_opacity.png
+newmtl 髪＿2_0a8a2193-e169-4dff-a5d9-2d5691bf980d
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪&大和＿髪_opacity_1.png
+newmtl 髪＿3_1b4d1a57-be7e-4ab8-a039-d81acdabdd35
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪&大和＿髪_opacity_2.png
+newmtl 髪＿4_3085d73c-40eb-4fa4-bb50-a8002703dd58
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪&大和＿髪_opacity_3.png
+newmtl 髪＿5_957f6ad1-086a-463d-a3ff-5c7643a5e560
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪&大和＿髪_opacity_4.png
+newmtl はぅ_6da0a0f7-395d-4598-911a-28a8ae7f7897
+Kd 0.000 0.000 0.000
+d 1.000
+newmtl 大和＿髪落影_9ff516ad-2294-4c4f-8447-a44a7dd6ee0e
+Kd 1.000 1.000 1.000
+d 1.000
+map_Kd 大和＿髪落影&opacityTexture.png
