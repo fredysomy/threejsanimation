@@ -22,9 +22,7 @@ export default function ThreeEntryPoint(sceneRef) {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   sceneRef.appendChild(renderer.domElement);
-  const spotLight = new THREE.SpotLight(0xffffff);
-  spotLight.position.set(0, 10, 100);
-  scene.add(spotLight);
+  
 
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 scene.add( directionalLight );
