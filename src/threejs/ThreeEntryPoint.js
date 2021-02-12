@@ -65,7 +65,7 @@ scene.add( light );
   var mtlLoader = new MTLLoader();
 mtlLoader.setBaseUrl( 'https://raw.githubusercontent.com/fredysomy/threejsanimation/master/src/models/gilr/' );
 mtlLoader.setPath( 'https://raw.githubusercontent.com/fredysomy/threejsanimation/master/src/models/gilr/' );
-var url = "Project Name.mtl";
+var url = "Project%20Name.mtl";
 mtlLoader.load( url, function( materials ) {
 
     materials.preload();
@@ -73,7 +73,7 @@ mtlLoader.load( url, function( materials ) {
     var objLoader = new OBJLoader();
     objLoader.setMaterials( materials );
     objLoader.setPath( 'https://raw.githubusercontent.com/fredysomy/threejsanimation/master/src/models/gilr/' );
-    objLoader.load( 'Project Name.obj', function ( object ) {
+    objLoader.load('Project%20Name.obj', function ( object ) {
 
         object.position.y = - 95;
         scene.add( object );
