@@ -26,6 +26,10 @@ export default function ThreeEntryPoint(sceneRef) {
   spotLight.position.set(0, 10, 100);
   scene.add(spotLight);
 
+const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+scene.add( directionalLight );
+
+
   let controls = new OrbitControls(camera, sceneRef);
   controls.target.set(0, 0, 0);
   controls.rotateSpeed = 0.5;
