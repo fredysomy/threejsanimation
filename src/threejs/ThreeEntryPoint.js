@@ -15,7 +15,7 @@ export default function ThreeEntryPoint(sceneRef) {
     0.1,
     10000
   );
-  camera.position.set(0, 50, 300);
+  camera.position.set(0, 70, 300);
 
   const loader = new THREE.TextureLoader();
   const renderer = new THREE.WebGLRenderer({ antialias: true });
